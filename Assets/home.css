@@ -34,3 +34,14 @@
     padding-top: 10px;
     padding-bottom: 20px;
 }
+
+.slideshow {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slideshow img {
+    max-width: 100%;
+    height: auto;
+}
