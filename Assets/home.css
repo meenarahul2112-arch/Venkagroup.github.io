@@ -34,3 +34,21 @@
     padding-top: 10px;
     padding-bottom: 20px;
 }
+
+.slideshow {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.slideshow img {
+    max-width: 80%;
+    height: 60%;
+    object-fit: cover;
+}
+.paragraph-box {
+    text-align: justify;        
+    height: 250px;              
+    display: flex;
+    align-items: center;        
+}
