@@ -14,7 +14,6 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="Assets/home.css">
 
@@ -22,81 +21,110 @@
 
     <title>Venkataraman Lab</title>
 
+      <style>
+        .page-wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row accent p-4"></div>
-        <div class="row base whitetext pt-5" id="header">
-            <div class="col-2"></div>
-            <div class="col-4">
-                <div class="h1">
-                    <a class="whitetext" href="">Venkataraman Group</a>
+
+<!-- FULL-WIDTH TOP STRIP -->
+<div class="accent full-width-strip p-4"></div>
+
+<!-- FULL-WIDTH HEADER STRIP -->
+<div class="base full-width-strip">
+    <div class="page-wrapper">
+
+        <div class="row whitetext pt-5 align-items-center" id="header">
+
+            <!-- LEFT COLUMN -->
+            <div class="col-md-8 text-left">
+                <div class="h1 mb-2">
+                    <a class="whitetext" href="index.html">Venkataraman Group</a>
+                </div>
+
+                <div class="h4" style="line-height: 1.4;">
+                    Institute of Science and Technology Austria<br>
+                    <span style="font-size: 0.7em;">and</span><br>
+                    Applied Physics and Chemistry,<br>
+                    Columbia University
                 </div>
             </div>
-            <div class="col-4">
-                <div class="h3">
-                    Institute of Science and Technology Austria<br><span style="font-size: 0.7em;">and</span>
-<br>Applied Physics and Chemistry,
-                    <br>Columbia University
-                </div>
+
+            <!-- RIGHT COLUMN: LOGO -->
+            <div class="col-md-4 text-right">
+                <img src="Assets/Images/lab_log.png"
+                     alt="Group Logo"
+                     style="max-height: 120px;">
             </div>
-            <div class="col-2"></div>
+
         </div>
-        <div class="row base pt-5 pb-5">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <nav class="navbar navbar-expand-lg navbar-dark mb-2">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                     <ul class="navbar-nav">
-                            <a class="navbar-brand" href="">Home</a>
 
-                            <li class="nav-item mr-5">
-                                <a class="nav-link whitetext" href="about.html">About Latha</a>
-                            </li>
+    </div>
+</div>
 
-                            <li class="nav-item mr-5">
-                                <a class="nav-link" href="publications.html">Publications</a>
-                            </li>
+<!-- NAVIGATION BAR -->
+<div class="base full-width-strip">
+    <div class="page-wrapper pt-4 pb-4">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                            <li class="nav-item mr-5">
-                                <a class="nav-link" href="thesis.html">Theses</a>
-                            </li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
 
-                            <li class="nav-item mr-5">
-                                <a class="nav-link" href="members.html">Members</a>
-                            </li>
-                            <li class="nav-item mr-5">
-                                <a class="nav-link" href="meetings.html">Meetings</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link whitetext" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="about.html">About Latha</a>
+                    </li>
+
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="thesis.html">Theses</a>
+                    </li>
+
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="members.html">Members</a>
+                    </li>
+
+                    <li class="nav-item mr-4">
+                        <a class="nav-link" href="meetings.html">Meetings</a>
+                    </li>
+
+                </ul>
             </div>
-            <div class="col-2"></div>
-        </div>
+        </nav>
+    </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="page-wrapper">
+
+    <div class="my-4">
+        <hr class="styled-hr">
     </div>
 
-    <div>
-        <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-        <hr class="styled-hr" style="width:100%;">
-        <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-    </div>
+    <div class="row p-3 justify-content-center">
 
-    <div class="row p-3">
-
-        <div class="col-2"></div>
-        <div class="col-4">
+        <div class="col-md-5">
             <div class="slideshow group-slideshow">
-            <img id="slide-group" src="Assets/Images/group-photo1.jpg" class="img-fluid">
+                <img id="slide-group" src="Assets/Images/group-photo1.jpg" class="img-fluid">
+            </div>
         </div>
-        </div>
-        <div class="col-4 paragraph box" style="text-align: justify;">
+
+        <div class="col-md-5 paragraph-box">
             We measure fundamental properties of single molecule devices, seeking to understand the interplay of
             physics, chemistry and engineering at the nanometer scale. The underlying focus of our research is to
             fabricate single molecule circuits, a molecule attached to two electrodes, with varied functionality, where
@@ -104,28 +132,27 @@
             breaking forces in these devices relate not only to the molecular structure, but also to the metal contacts
             and linking bonds. Our experiments provide a deeper understanding of the fundamental physics of electron
             transport, while laying the groundwork for technological advances at the nanometer scale.
-        </div>
-        <div class="col-2"></div>
+      </div>
+
     </div>
 
-    <div>
-        <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-        <hr class="styled-hr" style="width:100%;">
-        <div style="height: 20px; overflow: hidden; width: 100%;"></div>
+    <div class="my-4">
+        <hr class="styled-hr">
     </div>
-
 
     <!-- NEWS -->
-    <div class="row">
-        <div class="col publications-col">
-            <div class="paragraph" style="text-align:center;"><span>﻿</span>
-                <font size="6">NEWS</font><span>﻿</span>
-            </div>
-<div>
-                <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-                <hr class="styled-hr" style="width:100%;">
+    <div class="row justify-content-center">
+        <div class="col-md-10 publications-col">
 
-                <font size="4">News from 2026</font><br><br>
+            <div class="paragraph text-center">
+                <font size="6">NEWS</font>
+            </div>
+
+            <div class="my-4">
+                <hr class="styled-hr">
+            </div>
+
+            <font size="4">News from 2026</font><br><br>
     
 
             <div class="paragraph"><div class="paragraph">​<font size="4">News from 2025</font><br><br>
@@ -691,20 +718,22 @@
     </div>
 
 
-<div class="container-fluid base pt-5 pb-5">
-    <div class="row">
-            <div class="col-12">
-                <span class="font-weight-bold">Contact:</span> 
-                Latha Venkataraman, Insitute of Science and Technology Austria.
-                <br>Am Campus 1, 3400 Klosterneuburg, Austria
-                <br>Phone: +43 2243 9000 2352; email: latha.venkataraman(at)ist.ac.at
-                <div>
-                    <img class="img-fluid pt-3" src="Assets/Images/istaimage_orig.jpg">
-                </div>
-            </div>
-                       
+<!-- FULL-WIDTH BOTTOM STRIP -->
+<div class="base full-width-strip pt-5 pb-5">
+    <div class="page-wrapper">
+        <span class="font-weight-bold">Contact:</span>
+        Latha Venkataraman, Institute of Science and Technology Austria.
+        <br>Am Campus 1, 3400 Klosterneuburg, Austria
+        <br>Phone: +43 2243 9000 2352; email: latha.venkataraman(at)ist.ac.at
+
+        <div>
+            <img class="img-fluid pt-3" src="Assets/Images/istaimage_orig.jpg">
         </div>
     </div>
-</body>
+</div>
 
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+</body>
 </html>
