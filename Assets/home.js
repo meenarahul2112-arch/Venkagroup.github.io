@@ -32,12 +32,20 @@ const pubImages = [
   "Assets/Images/TOC_pub12.png"
 ];
 
+const pubCaptions = [
+  "Caption for TOC_pub1",
+  "Caption for TOC_pub2",
+  "Caption for TOC_pub3"
+];
+
 let pubIndex = 0;
 
 setInterval(() => {
   pubIndex = (pubIndex + 1) % pubImages.length;
   document.getElementById("slide-pub").src = pubImages[pubIndex];
+  document.getElementById("toc-caption").textContent = pubCaptions[pubIndex];
 }, 3000);
+
 
 
 
