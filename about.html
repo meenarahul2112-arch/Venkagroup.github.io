@@ -2,160 +2,165 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="data:,">
 
-    <!-- jquery -->
+    <!-- jQuery + jQuery UI -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap 4 ONLY -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="Assets/home.css">
 
     <script type="text/javascript" src="Assets/home.js"></script>
 
     <title>Venkataraman Lab</title>
 
+    <style>
+        /* Ensures the entire site is centered */
+        .page-wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row accent p-4"></div>
-        <div class="row base whitetext pt-5" id="header">
-            <div class="col-2"></div>
-            <div class="col-4">
-                <div class="h1">
-                    <a class="whitetext" href="index.html">Venkataraman Group</a>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="h3">
-                    Institute of Science and Technology Austria<br>
-                    <span style="font-size: 0.7em;">and</span>
-<br>
-                    Applied Physics and Chemistry,
-                    <br>Columbia University
-                </div>
-            </div>
-            <div class="col-2"></div>
-        </div>
-        <div class="row base pt-5 pb-5">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <nav class="navbar navbar-expand-lg navbar-dark mb-2">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item mr-5">
-                                <a class="nav-link whitetext" href="index.html">Home</a>
-                            </li>
-                            <a class="navbar-brand mr-5" href="">About Latha</a>
-                            <li class="nav-item mr-5">
-                                <a class="nav-link" href="publications.html">Publications</a>
-                            </li>
-                            <li class="nav-item mr-5">
-                                <a class="nav-link" href="thesis.html">Theses</a>
-                            </li>
-                            <li class="nav-item mr-5">
-                                <a class="nav-link" href="members.html">Members</a>
-                            </li>
-                            <li class="nav-item mr-5">
-                                <a class="nav-link" href="meetings.html">Meetings</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="col-2"></div>
-        </div>
 
-        <div class="row mb-5">
-            <div class="col-2"></div>
-            <!-- LEFT COLUMN: Paragraphs -->
-    <div class="col-6">
-        <div class="row p-2 about-text mt-5">
-            Latha Venkataraman received her Bachelor's degree in Physics from Massachusetts Institute of
-            Technology in 1993 where she did her undergraduate thesis with Prof. Mildred Dresselhaus calculating
-            the phonon modes of carbon nanotubes. She then moved to Harvard University and obtained her Ph. D.
-            in 1999 working under the guidance of Prof. Charles Lieber investigating electronic properties of
-            one-dimensional systems. She worked as a research scientist at Vytran Corporation from 1999 to 2002.
-            In 2003, she joined Columbia University as a research scientist in the NSF funded Nanoscience and
-            Engineering Center. She started her independent career as an assistant professor in the Department
-            of Applied Physics and Applied Mathematics at Columbia University in 2007, was promoted to Associate
-            Professor with tenure in 2012 and Professor in 2016.
-        </div>
+<div class="page-wrapper">
 
-        <div class="row p-2 about-text mt-5">
-            She is currently Lawrence Gussman Professor of Applied Physics and Professor of Chemistry. Latha
-            Venkataraman served as Vice Provost for Faculty Affairs from January 2019 through July 2022.
-            Prominent awards she has received include the Alexander von Humboldt Research Award, the National
-            Science Foundation Career Award, Packard Fellowship for Science and Engineering, and the Alfred P.
-            Sloan Fellowship in Chemistry. Latha Venkataraman currently serves on the Editorial Advisory Board
-            of the Journal of the American Chemical Society, Nano Letters and Chemical Science.
-        </div>
+    <!-- Accent bar -->
+    <div class="row accent p-4"></div>
 
-        <div class="row p-2 about-text mt-5">
-            <p>
-    Latha Venkataraman moved to the 
-    <a href="https://ista.ac.at/en/research/venkataraman-group/" target="_blank">
-        Institute of Science and Technology Austria
-    </a> 
-    in 2025 where she is a full Professor at the Institute.
-            </p>
-</div>
+    <!-- HEADER -->
+    <div class="row base whitetext pt-5 justify-content-center" id="header">
+        <div class="col-md-4 text-center">
+            <div class="h1">
+                <a class="whitetext" href="index.html">Venkataraman Group</a>
+            </div>
+        </div>
+        <div class="col-md-4 text-center">
+            <div class="h3">
+                Institute of Science and Technology Austria<br>
+                <span style="font-size: 0.7em;">and</span><br>
+                Applied Physics and Chemistry,<br>
+                Columbia University
+            </div>
+        </div>
     </div>
 
-    <!-- RIGHT COLUMN: Image + CV -->
-    <div class="col-3 text-center">
-        <img class="img-fluid mt-5 p-3" src="Assets/Images/lvphoto_new.jpg">
+    <!-- NAVIGATION -->
+    <div class="row base pt-5 pb-5 justify-content-center">
+        <div class="col-md-10">
+            <nav class="navbar navbar-expand-lg navbar-dark mb-2">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="p-3">
-            <button type="button" class="btn btn-primary accent">
-                <a href="Assets/PDFs/lvenkataramancvoct2025.pdf" class="whitetext" style="text-decoration:none;">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mr-4">
+                            <a class="nav-link whitetext" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link" href="">About Latha</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link" href="publications.html">Publications</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link" href="thesis.html">Theses</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link" href="members.html">Members</a>
+                        </li>
+                        <li class="nav-item mr-4">
+                            <a class="nav-link" href="meetings.html">Meetings</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="row mb-5 justify-content-center">
+
+        <!-- LEFT COLUMN -->
+        <div class="col-md-7">
+            <div class="about-text mt-5">
+                Latha Venkataraman received her Bachelor's degree in Physics from Massachusetts Institute of
+                Technology in 1993 where she did her undergraduate thesis with Prof. Mildred Dresselhaus calculating
+                the phonon modes of carbon nanotubes. She then moved to Harvard University and obtained her Ph. D.
+                in 1999 working under the guidance of Prof. Charles Lieber investigating electronic properties of
+                one-dimensional systems. She worked as a research scientist at Vytran Corporation from 1999 to 2002.
+                In 2003, she joined Columbia University as a research scientist in the NSF funded Nanoscience and
+                Engineering Center. She started her independent career as an assistant professor in the Department
+                of Applied Physics and Applied Mathematics at Columbia University in 2007, was promoted to Associate
+                Professor with tenure in 2012 and Professor in 2016.
+            </div>
+
+            <div class="about-text mt-5">
+                She is currently Lawrence Gussman Professor of Applied Physics and Professor of Chemistry. Latha
+                Venkataraman served as Vice Provost for Faculty Affairs from January 2019 through July 2022.
+                Prominent awards she has received include the Alexander von Humboldt Research Award, the National
+                Science Foundation Career Award, Packard Fellowship for Science and Engineering, and the Alfred P.
+                Sloan Fellowship in Chemistry. Latha Venkataraman currently serves on the Editorial Advisory Board
+                of the Journal of the American Chemical Society, Nano Letters and Chemical Science.
+            </div>
+
+            <div class="about-text mt-5">
+                <p>
+                    Latha Venkataraman moved to the
+                    <a href="https://ista.ac.at/en/research/venkataraman-group/" target="_blank">
+                        Institute of Science and Technology Austria
+                    </a>
+                    in 2025 where she is a full Professor at the Institute.
+                </p>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="col-md-4 text-center">
+            <img class="img-fluid mt-5 p-3" src="Assets/Images/lvphoto_new.jpg">
+
+            <div class="p-3">
+                <a href="Assets/PDFs/lvenkataramancvoct2025.pdf" class="btn btn-primary accent whitetext" style="text-decoration:none;">
                     Download CV
                 </a>
-            </button>
+            </div>
         </div>
+
     </div>
 
-</div>
-
-                </div>
-            </div>
-            <div class="col-2">
-
-            </div>
-
-
-
-        </div>
-
-
-     <div class="container-fluid base pt-5 pb-5">
-    <div class="row">
-        <div class="col-2"></div>
-        <div class="col">
-                <span class="font-weight-bold">Contact:</span> Latha Venkataraman, Insitute of Science and Technology Austria.
+    <!-- FOOTER -->
+    <div class="base pt-5 pb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <span class="font-weight-bold">Contact:</span>  
+                Latha Venkataraman, Institute of Science and Technology Austria.
                 <br>Am Campus 1, 3400 Klosterneuburg, Austria
                 <br>Phone: +43 2243 9000 2352; email: latha.venkataraman(at)ist.ac.at
+
                 <div>
                     <img class="img-fluid pt-3" src="Assets/Images/istaimage_orig.jpg">
                 </div>
             </div>
-            <div class="col-2"></div>
-</div>
-</div>
-    
-</body>
+        </div>
+    </div>
 
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+</body>
 </html>
+
