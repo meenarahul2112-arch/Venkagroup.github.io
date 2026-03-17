@@ -32,9 +32,16 @@
     padding-right: 200px;
 }
 
-.member-photo{
-    padding-top: 10px;
-    padding-bottom: 20px;
+.member-photo .col {
+    display: flex;
+    align-items: center;   
+    gap: 15px;            
+}
+
+.member-photo img {
+    width: 120px;          
+    height: auto;
+    flex-shrink: 0;  
 }
 
 .slideshow {
